@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+
+    <meta
+        name="description"
+        content="Read articles about technology, artificial intelligence, web development and creative ideas on The Curious Byte."
+    >
+
+
+    <title>Article | The Curious Byte</title>
+
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- =================================
+         READING PROGRESS BAR
+    ================================== -->
+
+    <div class="reading-progress">
+
+
+        <div
+            class="reading-progress-bar"
+            id="readingProgressBar"
+        ></div>
+
+
+    </div>
+
+
+
+    <!-- =================================
+         NAVBAR
+    ================================== -->
+
+    <header class="header">
+
+
+        <nav class="navbar container">
+
+
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                The Curious <span>Byte.</span>
+
+            </a>
+
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <div
+                class="nav-links"
+                id="navLinks"
+            >
+
+
+                <a href="index.html">
+
+                    Home
+
+                </a>
+
+
+                <a href="index.html#blogs">
+
+                    Articles
+
+                </a>
+
+
+                <a href="index.html#categories">
+
+                    Categories
+
+                </a>
+
+
+                <a href="index.html#about">
+
+                    About
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- NAVIGATION ACTIONS -->
+
+            <div class="nav-actions">
+
+
+
+                <!-- DARK MODE BUTTON -->
+
+                <button
+                    class="icon-btn"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
+                >
+
+                    <i class="fa-regular fa-moon"></i>
+
+                </button>
+
+
+
+                <!-- MOBILE MENU BUTTON -->
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Open menu"
+                    title="Open menu"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN CONTENT
+    ================================== -->
+
+    <main>
+
+
+        <article class="article-page">
+
+
+
+            <!-- =================================
+                 ARTICLE HEADER
+                 GENERATED USING JAVASCRIPT
+            ================================== -->
+
+            <div
+                class="article-header container-small"
+                id="articleHeader"
+            ></div>
+
+
+
+            <!-- =================================
+                 ARTICLE COVER IMAGE
+                 GENERATED USING JAVASCRIPT
+            ================================== -->
+
+            <div
+                class="article-cover container"
+                id="articleCover"
+            ></div>
+
+
+
+            <!-- =================================
+                 ARTICLE LAYOUT
+            ================================== -->
+
+            <div class="article-layout container-small">
+
+
+
+                <!-- =================================
+                     ARTICLE CONTENT
+                     GENERATED USING JAVASCRIPT
+                ================================== -->
+
+                <div
+                    class="article-content"
+                    id="articleContent"
+                ></div>
+
+
+
+                <!-- =================================
+                     SOCIAL SHARING
+                ================================== -->
+
+                <aside class="share-section reveal">
+
+
+                    <span>
+
+                        Share this article
+
+                    </span>
+
+
+
+                    <div class="share-buttons">
+
+
+
+                        <!-- FACEBOOK -->
+
+                        <button
+                            onclick="shareArticle('facebook')"
+                            aria-label="Share on Facebook"
+                            title="Share on Facebook"
+                        >
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </button>
+
+
+
+                        <!-- TWITTER / X -->
+
+                        <button
+                            onclick="shareArticle('twitter')"
+                            aria-label="Share on Twitter"
+                            title="Share on Twitter"
+                        >
+
+                            <i class="fa-brands fa-x-twitter"></i>
+
+                        </button>
+
+
+
+                        <!-- LINKEDIN -->
+
+                        <button
+                            onclick="shareArticle('linkedin')"
+                            aria-label="Share on LinkedIn"
+                            title="Share on LinkedIn"
+                        >
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </button>
+
+
+
+                        <!-- COPY LINK -->
+
+                        <button
+                            onclick="copyLink()"
+                            aria-label="Copy article link"
+                            title="Copy article link"
+                        >
+
+                            <i class="fa-solid fa-link"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </aside>
+
+
+
+                <!-- =================================
+                     ARTICLE TAGS
+                     GENERATED USING JAVASCRIPT
+                ================================== -->
+
+                <div
+                    class="article-tags reveal"
+                    id="articleTags"
+                ></div>
+
+
+
+                <!-- =================================
+                     AUTHOR PROFILE
+                ================================== -->
+
+                <section class="author-box reveal">
+
+
+
+                    <!-- AUTHOR AVATAR -->
+
+                    <div class="author-avatar">
+
+                        AR
+
+                    </div>
+
+
+
+                    <!-- AUTHOR INFORMATION -->
+
+                    <div class="author-info">
+
+
+                        <span class="author-label">
+
+                            WRITTEN BY
+
+                        </span>
+
+
+                        <h3>
+
+                            Anisha Raj
+
+                        </h3>
+
+
+                        <p>
+
+                            AIML student and frontend developer exploring
+                            technology, artificial intelligence, coding,
+                            and creativity.
+
+                        </p>
+
+
+
+                        <!-- AUTHOR SOCIAL LINKS -->
+
+                        <div class="author-socials">
+
+
+                            <a
+                                href="#"
+                                aria-label="Anisha Raj on LinkedIn"
+                                title="LinkedIn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </a>
+
+
+                            <a
+                                href="#"
+                                aria-label="Anisha Raj on GitHub"
+                                title="GitHub"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+
+                                <i class="fa-brands fa-github"></i>
+
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================
+                     COMMENTS SECTION
+                ================================== -->
+
+                <section class="comments-section reveal">
+
+
+
+                    <h2>
+
+                        Join the conversation
+
+                    </h2>
+
+
+                    <p class="comment-subtitle">
+
+                        Share your thoughts about this article.
+
+                    </p>
+
+
+
+                    <!-- COMMENT FORM -->
+
+                    <form
+                        class="comment-form"
+                        id="commentForm"
+                    >
+
+
+
+                        <div class="form-row">
+
+
+
+                            <!-- NAME -->
+
+                            <input
+                                type="text"
+                                id="commentName"
+                                placeholder="Your name"
+                                aria-label="Your name"
+                                required
+                            >
+
+
+
+                            <!-- EMAIL -->
+
+                            <input
+                                type="email"
+                                id="commentEmail"
+                                placeholder="Your email"
+                                aria-label="Your email"
+                                required
+                            >
+
+
+                        </div>
+
+
+
+                        <!-- COMMENT -->
+
+                        <textarea
+                            id="commentText"
+                            placeholder="Write your comment..."
+                            aria-label="Write your comment"
+                            rows="6"
+                            required
+                        ></textarea>
+
+
+
+                        <!-- SUBMIT BUTTON -->
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+
+                            Post Comment
+
+                            <i class="fa-regular fa-paper-plane"></i>
+
+                        </button>
+
+
+                    </form>
+
+
+
+                    <!-- COMMENTS GENERATED USING JAVASCRIPT -->
+
+                    <div
+                        class="comments-list"
+                        id="commentsList"
+                    ></div>
+
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 RELATED ARTICLES
+            ================================== -->
+
+            <section class="related-section">
+
+
+                <div class="container">
+
+
+
+                    <!-- SECTION HEADING -->
+
+                    <div class="section-heading reveal">
+
+
+                        <div>
+
+
+                            <span class="section-label">
+
+                                KEEP READING
+
+                            </span>
+
+
+                            <h2>
+
+                                Related articles
+
+                            </h2>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- RELATED ARTICLE CARDS -->
+
+                    <div
+                        class="blog-grid"
+                        id="relatedArticles"
+                    ></div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </article>
+
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer class="footer">
+
+
+        <div class="container footer-grid">
+
+
+
+            <!-- FOOTER BRAND -->
+
+            <div class="footer-brand">
+
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    The Curious <span>Byte.</span>
+
+                </a>
+
+
+                <p>
+
+                    Thoughts, stories and ideas for the
+                    endlessly curious.
+
+                </p>
+
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="social-links">
+
+
+                    <a
+                        href="#"
+                        aria-label="LinkedIn"
+                        title="LinkedIn"
+                    >
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="GitHub"
+                        title="GitHub"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- EXPLORE LINKS -->
+
+            <div class="footer-column">
+
+
+                <h4>
+
+                    Explore
+
+                </h4>
+
+
+                <a href="index.html">
+
+                    Home
+
+                </a>
+
+
+                <a href="index.html#blogs">
+
+                    Articles
+
+                </a>
+
+
+                <a href="index.html#categories">
+
+                    Categories
+
+                </a>
+
+
+                <a href="index.html#about">
+
+                    About
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- CATEGORY LINKS -->
+
+            <div class="footer-column">
+
+
+                <h4>
+
+                    Categories
+
+                </h4>
+
+
+                <a href="index.html#blogs">
+
+                    AI & ML
+
+                </a>
+
+
+                <a href="index.html#blogs">
+
+                    Web Development
+
+                </a>
+
+
+                <a href="index.html#blogs">
+
+                    Productivity
+
+                </a>
+
+
+                <a href="index.html#blogs">
+
+                    Lifestyle
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="container footer-bottom">
+
+
+            <p>
+
+                © 2026 The Curious Byte.
+                All rights reserved.
+
+            </p>
+
+
+            <p>
+
+                Designed & Developed with
+
+                <i class="fa-solid fa-heart"></i>
+
+                by Anisha Raj
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =================================
+         TOAST MESSAGE
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+
+
+        <i class="fa-solid fa-circle-check"></i>
+
+
+        <span id="toastMessage">
+
+            Link copied!
+
+        </span>
+
+
+    </div>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

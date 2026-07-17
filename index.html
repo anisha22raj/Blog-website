@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="The Curious Byte - A modern blog about technology, artificial intelligence, web development, productivity and creative ideas."
+    >
+
+    <title>The Curious Byte | Tech, AI & Creative Ideas</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         NAVBAR
+    ================================== -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
+                The Curious <span>Byte.</span>
+
+            </a>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <div
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a
+                    href="#home"
+                    class="active"
+                >
+                    Home
+                </a>
+
+                <a href="#blogs">
+                    Articles
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </div>
+
+
+            <!-- NAVIGATION ACTIONS -->
+
+            <div class="nav-actions">
+
+
+                <!-- SEARCH BUTTON -->
+
+                <button
+                    class="icon-btn"
+                    id="searchToggle"
+                    aria-label="Open search"
+                    title="Search articles"
+                >
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+
+                <!-- DARK MODE BUTTON -->
+
+                <button
+                    class="icon-btn"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
+                >
+
+                    <i class="fa-regular fa-moon"></i>
+
+                </button>
+
+
+                <!-- MOBILE MENU BUTTON -->
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Open menu"
+                    title="Open menu"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+            </div>
+
+        </nav>
+
+
+        <!-- =================================
+             SEARCH AREA
+        ================================== -->
+
+        <div
+            class="search-area"
+            id="searchArea"
+        >
+
+            <div class="container search-wrapper">
+
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search articles..."
+                    autocomplete="off"
+                    aria-label="Search articles"
+                >
+
+
+                <button
+                    id="closeSearch"
+                    aria-label="Close search"
+                    title="Close search"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN CONTENT
+    ================================== -->
+
+    <main>
+
+
+        <!-- =================================
+             HERO / FEATURED BLOG
+        ================================== -->
+
+        <section
+            class="hero container"
+            id="home"
+        >
+
+
+            <!-- HERO TEXT -->
+
+            <div class="hero-text">
+
+
+                <span class="section-label">
+
+                    FEATURED STORY
+
+                </span>
+
+
+                <h1>
+
+                    The future is being
+
+                    <em>
+                        written in code.
+                    </em>
+
+                </h1>
+
+
+                <p>
+
+                    Exploring how artificial intelligence is changing
+                    the way we create, work, learn and imagine the future.
+
+                </p>
+
+
+                <!-- POST INFORMATION -->
+
+                <div class="post-info">
+
+
+                    <span>
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        July 12, 2026
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        6 min read
+
+                    </span>
+
+
+                </div>
+
+
+                <!-- READ ARTICLE BUTTON -->
+
+                <a
+                    href="blog.html?id=1"
+                    class="primary-btn"
+                >
+
+                    Read Article
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+
+            <a
+                href="blog.html?id=1"
+                class="hero-image"
+                aria-label="Read featured article"
+            >
+
+
+                <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+                    alt="Artificial intelligence technology"
+                >
+
+
+                <div class="image-badge">
+
+                    AI & Technology
+
+                </div>
+
+
+            </a>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             CATEGORIES
+        ================================== -->
+
+        <section
+            class="categories-section container reveal"
+            id="categories"
+        >
+
+
+            <div class="section-heading">
+
+
+                <div>
+
+
+                    <span class="section-label">
+
+                        EXPLORE
+
+                    </span>
+
+
+                    <h2>
+
+                        Browse by category
+
+                    </h2>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CATEGORY FILTER BUTTONS -->
+
+            <div class="category-list">
+
+
+                <button
+                    class="category-btn active"
+                    data-category="All"
+                >
+
+                    All Posts
+
+                </button>
+
+
+                <button
+                    class="category-btn"
+                    data-category="AI & ML"
+                >
+
+                    AI & ML
+
+                </button>
+
+
+                <button
+                    class="category-btn"
+                    data-category="Web Development"
+                >
+
+                    Web Development
+
+                </button>
+
+
+                <button
+                    class="category-btn"
+                    data-category="Productivity"
+                >
+
+                    Productivity
+
+                </button>
+
+
+                <button
+                    class="category-btn"
+                    data-category="Lifestyle"
+                >
+
+                    Lifestyle
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             BLOG SECTION
+        ================================== -->
+
+        <section
+            class="blog-section container"
+            id="blogs"
+        >
+
+
+            <!-- SECTION HEADING -->
+
+            <div class="section-heading reveal">
+
+
+                <div>
+
+
+                    <span class="section-label">
+
+                        LATEST STORIES
+
+                    </span>
+
+
+                    <h2>
+
+                        Fresh from the blog
+
+                    </h2>
+
+
+                </div>
+
+
+                <p>
+
+                    Ideas, stories and insights for curious minds.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 BLOG CARDS
+                 GENERATED USING JAVASCRIPT
+            ================================== -->
+
+            <div
+                class="blog-grid"
+                id="blogGrid"
+            ></div>
+
+
+
+            <!-- =================================
+                 NO SEARCH RESULTS
+            ================================== -->
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+
+
+                <i class="fa-regular fa-face-frown"></i>
+
+
+                <h3>
+
+                    No articles found
+
+                </h3>
+
+
+                <p>
+
+                    Try searching with another keyword.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 LOAD MORE BUTTON
+            ================================== -->
+
+            <div class="load-more-wrapper">
+
+
+                <button
+                    class="secondary-btn"
+                    id="loadMoreBtn"
+                >
+
+                    Load More
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             NEWSLETTER
+        ================================== -->
+
+        <section class="newsletter reveal">
+
+
+            <div class="newsletter-content container">
+
+
+                <!-- NEWSLETTER TEXT -->
+
+                <div>
+
+
+                    <span class="section-label light-label">
+
+                        STAY CURIOUS
+
+                    </span>
+
+
+                    <h2>
+
+                        Stories worth reading,
+                        delivered to your inbox.
+
+                    </h2>
+
+
+                    <p>
+
+                        Join our community and get the latest
+                        articles, ideas and inspiration.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- NEWSLETTER FORM -->
+
+                <form
+                    class="newsletter-form"
+                    id="newsletterForm"
+                >
+
+
+                    <input
+                        type="email"
+                        id="newsletterEmail"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+
+
+                    <button type="submit">
+
+                        Subscribe
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             ABOUT
+        ================================== -->
+
+        <section
+            class="about-section container reveal"
+            id="about"
+        >
+
+
+            <div class="about-small">
+
+
+                <span class="section-label">
+
+                    ABOUT THE BLOG
+
+                </span>
+
+
+            </div>
+
+
+
+            <div class="about-content">
+
+
+                <h2>
+
+                    A space for ideas that
+
+                    <em>
+
+                        inspire and inform.
+
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    The Curious Byte is a modern digital journal
+                    exploring technology, artificial intelligence,
+                    web development, productivity and everyday life.
+
+                    Our goal is simple — to make complex ideas
+                    interesting, useful and enjoyable to read.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer class="footer">
+
+
+        <div class="container footer-grid">
+
+
+            <!-- FOOTER BRAND -->
+
+            <div class="footer-brand">
+
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    The Curious <span>Byte.</span>
+
+                </a>
+
+
+                <p>
+
+                    Thoughts, stories and ideas for the
+                    endlessly curious.
+
+                </p>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="social-links">
+
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                        title="Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="LinkedIn"
+                        title="LinkedIn"
+                    >
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="GitHub"
+                        title="GitHub"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                        title="Twitter"
+                    >
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FOOTER EXPLORE LINKS -->
+
+            <div class="footer-column">
+
+
+                <h4>
+
+                    Explore
+
+                </h4>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#blogs">
+                    Articles
+                </a>
+
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+
+                <a href="#about">
+                    About
+                </a>
+
+
+            </div>
+
+
+
+            <!-- FOOTER CATEGORY LINKS -->
+
+            <div class="footer-column">
+
+
+                <h4>
+
+                    Categories
+
+                </h4>
+
+
+                <a href="#blogs">
+                    AI & ML
+                </a>
+
+
+                <a href="#blogs">
+                    Web Development
+                </a>
+
+
+                <a href="#blogs">
+                    Productivity
+                </a>
+
+
+                <a href="#blogs">
+                    Lifestyle
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="container footer-bottom">
+
+
+            <p>
+
+                © 2026 The Curious Byte.
+                All rights reserved.
+
+            </p>
+
+
+            <p>
+
+                Designed & Developed with
+
+                <i class="fa-solid fa-heart"></i>
+
+                by Anisha Raj
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =================================
+         TOAST MESSAGE
+    ================================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+
+
+        <i class="fa-solid fa-circle-check"></i>
+
+
+        <span id="toastMessage">
+
+            Successfully subscribed!
+
+        </span>
+
+
+    </div>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
